@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00C27474"
+    tools:context=".activities.UserSubmissionsActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ContestsLayout"
+        android:layout_width="410dp"
+        android:layout_height="108dp"
+        android:background="#A2E6D7"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/contestTitleTextView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="#001A0909"
+            android:gravity="center"
+            android:text="@string/contests"
+            android:textColor="#000000"
+            android:textSize="24sp"
+            android:textStyle="normal" />
+
+        <TextView
+            android:id="@+id/contestUserHandleTextView"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginRight="5dp"
+            android:background="#FFEB3B"
+            android:gravity="center"
+            android:text="@string/handle"
+            android:textColor="#000000" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/contestsHeadingLinearLayout"
+        android:layout_width="408dp"
+        android:layout_height="40dp"
+        android:background="#00DF6363"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/ContestsLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ContestsLayout"
+        app:layout_constraintVertical_bias="0.0">
+
+        <TextView
+            android:id="@+id/contestsCountTextView"
+            android:layout_width="37dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/s_i"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/contestsNameTextView"
+            android:layout_width="210dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:paddingLeft="2dp"
+            android:paddingRight="2dp"
+            android:text="@string/contest_name"
+            android:textColor="#000000"
+            tools:text="Contest" />
+
+        <TextView
+            android:id="@+id/contestsRankTextView"
+            android:layout_width="46dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/rank"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/contestsRatingChangeTextView"
+            android:layout_width="59dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/rating_change"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/contestsNewRatingTextView"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/new_Rating"
+            android:textColor="#000000" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/contestsHeadingLinearLayout">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/userContestsRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="42dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.666"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/contestsHeadingLinearLayout"></androidx.recyclerview.widget.RecyclerView>
+
+    </LinearLayout>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

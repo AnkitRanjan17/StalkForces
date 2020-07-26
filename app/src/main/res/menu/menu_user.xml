@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/searchHandle"
+        android:title="Search Handle"/>
+    <item
+        android:id="@+id/contests"
+        android:title="Contests"/>
+    <item
+        android:id="@+id/submissions"
+        android:title="Submissions"/>
+    <item
+        android:id="@+id/favourites"
+        android:title="Favourites"/>
+    <item
+        android:id="@+id/upcomingContest"
+        android:title="Upcoming Contests"/>
+    <item
+        android:id="@+id/logout"
+        android:title="Logout"/>
+</menu>

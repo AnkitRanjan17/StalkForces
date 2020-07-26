@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "11513173395",
+    "firebase_url": "https://stalkforces-30c9c.firebaseio.com",
+    "project_id": "stalkforces-30c9c",
+    "storage_bucket": "stalkforces-30c9c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:11513173395:android:517436f4413d48a8fb8466",
+        "android_client_info": {
+          "package_name": "com.android.we3.stalkforces"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "11513173395-lb2009i9i5k1o360oltd9rpl6v9c0uq9.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.android.we3.stalkforces",
+            "certificate_hash": "25972097a11a9c367424cb018e8c294864ef28f9"
+          }
+        },
+        {
+          "client_id": "11513173395-q9at1mfqfuqorl1r48ohcifhpkd8opif.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCa4IlA_I-K_Dcn_OqF-byFWkrotauYS90"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "11513173395-q9at1mfqfuqorl1r48ohcifhpkd8opif.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
